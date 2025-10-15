@@ -1,0 +1,57 @@
+body {
+      font-family: Arial, sans-serif;  /* Skrifttype for hele siden */
+      background-color: #f9f6ef;  /* Lys bakgrunnsfarge på hele siden */
+      margin: 0; /* Fjerner standard kant rundt siden */
+      padding: 0; /* Fjerner standard innrykk */
+    }
+
+    header {
+      text-align: center;  /* Midtstiller teksten i headeren */
+      background-color: #fff3e6; /* Lys oransje bakgrunnsfarge */
+      padding: 2rem;  /* Litt luft rundt innholdet */
+    }
+
+    nav {
+      background-color: #f3f3db;   /* Lys gul bakgrunnsfarge for menyen */
+      padding: 1rem; /* Litt luft rundt menyen */
+      text-align: center;  /* Midtstiller lenkene i menyen */
+    }
+
+    nav a {
+      margin: 0 15px; /* Mellomrom mellom lenkene */
+      text-decoration: none; /* Fjerner understreking på lenkene */
+      color: #333;/* Mørk grå tekstfarge */
+      font-weight: bold; /* Gjør teksten tykk */
+      cursor: pointer; /* Endrer musepekeren til hånd når du holder over */
+    }
+
+    nav a:hover {
+      text-decoration: underline;/* Understreker lenken når du holder musepekeren over */
+    }
+
+    section { 
+      display: none; /* Skjuler alle seksjoner som standard */
+      padding: 2rem; /* Litt luft rundt innholdet */
+      text-align: center;/* Midtstiller teksten i seksjonen */
+    }
+
+    section.active {
+      display: block; /* Viser seksjonen som har klassen "active" */
+    }
+
+    footer {
+      text-align: center; /* Midtstiller teksten i footeren */
+      font-size: 0.8rem; /* Gjør teksten litt mindre */
+      padding: 1rem; /* Litt luft rundt teksten */
+      color: #777; /* Grå tekstfarge */
+    }
+
+    .menu-item {
+      display: inline-block;  /* Viser meny-elementene ved siden av hverandre */
+      background-color: #cfe8ef;  /* Lys blå bakgrunnsfarge */
+      margin: 10px; /* Mellomrom mellom elementene */
+      padding: 15px 25px; /* Luft inni hvert element */
+      border-radius: 10px; /* Runde hjørner */
+      font-weight: bold; /* Gjør teksten tykk */
+    }
+ 
