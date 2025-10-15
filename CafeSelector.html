@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="no">
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selector Cafe</title>
+</head>
+
+<body>
+  <header>
+    <link rel="stylesheet" href="SelectorCafe.css">
+    <h1>Selector Cafe</h1>
+    <p>Powered by coffee, coded with love</p>  
+  </header>
+
+  <nav>
+    <a onclick="showSection('home')">Home</a>
+    <a onclick="showSection('menu')">Menu</a>
+    <a onclick="showSection('contact')">Contact</a>
+    <a onclick="showSection('about')">About</a>
+  </nav>
+
+  <section id="home" class="active">
+    <h2>Welcome to Selector Cafe</h2>
+    <p>Where every choice is brewed to perfection ☕</p>
+  </section>
+
+  <section id="menu">
+   <h2>Menu</h2>
+    <div class="menu-item">Espresso</div>
+    <div class="menu-item">Cappuccino</div>
+    <div class="menu-item">Americano</div>
+    <div class="menu-item">Matcha</div>
+    <div class="menu-item">Hot Chocolate</div>
+    <div class="menu-item">Iced Coffee</div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact us</h2>
+    <p>Send us an email at <b>selector@cafe.no</b> or call us at <b>+47 123 45 678</b>.</p>
+  </section>
+
+  <section id="about">
+  <h2>Om Oss</h2>
+    <p>Selector Cafe was started by coffee lovers and coders who wanted to combine two great passions - coffee and technology.
+       Our goal is to create a place where creativity flows as freely as freshly brewed coffee.
+       We believe that every cup tells a story, and with us, that story is written with love and caffeine.</p>
+  </section>
+
+  <footer>
+  © 2025 Selector Cafe
+  </footer>
+
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll("section");
+      sections.forEach(sec => sec.classList.remove("active"));
+      document.getElementById(id).classList.add("active");
+    }
+  </script>
+
+</body>
+</html>
